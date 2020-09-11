@@ -89,6 +89,8 @@ img {
 .site-contacts-list .link {
 	padding-top: 24px;
 	padding-bottom: 26px;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav-list .link {
 	color: var(--color-main-text);
@@ -98,6 +100,8 @@ img {
 	display: flex;
 	align-items: center;
 	color: var(--color-secondary-text);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-list .link:hover,
@@ -107,8 +111,6 @@ img {
 .site-contacts-item:hover,
 .site-contacts-item:focus {
 	color: var(--accent);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-list .link.current {
@@ -358,24 +360,26 @@ p {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item-icon:not(:last-child) {
 	margin-right: 10px;
 }
 .team-icon {
 	fill: var(--color-icon-our-clients);
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover,
 .team-link:focus {
 	background-color: var(--accent);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover .team-icon,
 .team-link:focus .team-icon {
 	fill: var(--primary-bg-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Наши клиенты */
@@ -392,10 +396,14 @@ p {
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
-	/* padding-top: 20px; */
+	transition-property: border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
 	fill: var(--color-icon-our-clients);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-item:not(:last-child) {
 	margin-right: 30px;
@@ -404,14 +412,10 @@ p {
 .clients-icon-item:focus {
 	border: 1px solid #2196f3;
 	cursor: pointer;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-item:hover .client-icon,
 .clients-icon-item:focus .client-icon {
 	fill: var(--accent);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Футер */
 .ftr {
@@ -456,6 +460,8 @@ p {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--color-secondary-text);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr .ftr-contacts-items:hover,
@@ -475,6 +481,8 @@ p {
 	height: 44px;
 	border-radius: 50%;
 	background-color: var(--color-ftr-social-link);
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ftr-item-icon:not(:last-child) {
 	margin-right: 10px;
@@ -485,8 +493,6 @@ p {
 .ftr-link:hover,
 .ftr-link:focus {
 	background-color: var(--accent);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
 	position: fixed;
@@ -570,6 +576,8 @@ p {
 	letter-spacing: 0.03em;
 	padding: 8px 22px;
 	margin-right: 8px;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-list-item:not(:last-child) {
 	margin-right: 8px;
@@ -579,8 +587,7 @@ p {
 .btn-list .button:focus {
 	background-color: var(--accent);
 	color: var(--primary-bg-color);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	cursor: pointer;
 }
 
 /* Секция проектов */
