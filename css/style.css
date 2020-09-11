@@ -643,7 +643,7 @@ p {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background-color: rgba(33, 150, 243, 0.9);
 	color: var(--white);
 	font-size: 18px;
